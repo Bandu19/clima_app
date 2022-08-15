@@ -3,6 +3,8 @@ import { useState, createContext } from "react";
 const ClimaContext = createContext();
 
 export const ClimaProvider = ({ children }) => {
+   console.log(import.meta.env.VITE_API_KEY);
+
    const [busqueda, setBusqueda] = useState({
       ciudad: "",
       pais: "",
@@ -17,6 +19,7 @@ export const ClimaProvider = ({ children }) => {
       });
    };
 
+   // Imprime en consola los datos agregados en el Formulario
    const consultarClima = (datos) => {
       console.log(datos);
    };

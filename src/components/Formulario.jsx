@@ -2,8 +2,9 @@ import { useState } from "react";
 import { useClima } from "../hooks/useClima";
 
 export const Formulario = () => {
+   // Alerta
    const [alerta, setAlerta] = useState("");
-
+   //
    const { busqueda, datosBusqueda, consultarClima } = useClima();
 
    const { ciudad, pais } = busqueda;
@@ -17,12 +18,17 @@ export const Formulario = () => {
          return;
       }
 
+      // Manda los datos al consultarClima de lo que tenemos dentro de nuestra State
+
       consultarClima(busqueda);
    };
 
    return (
       <div className="contenedo">
-         {alerta && <p>{alerta}</p>}
+         {
+            // Ocupando Alerta
+            alerta && <p>{alerta}</p>
+         }
 
          <form onSubmit={handleSubmit}>
             <div className="campo">
