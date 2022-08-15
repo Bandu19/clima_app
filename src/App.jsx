@@ -1,12 +1,15 @@
 import "./App.css";
 import { AppClima } from "./components";
+import { ClimaProvider } from "./context";
 
 function App() {
    return (
-      <>
-         <h1>INICIO</h1>
+      <ClimaProvider>
+         <header>
+            <h1>Practica Clima</h1>
+         </header>
          <AppClima />
-      </>
+      </ClimaProvider>
    );
 }
 

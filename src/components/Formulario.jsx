@@ -1,6 +1,6 @@
 export const Formulario = () => {
    return (
-      <div className="contenedo">
+      <div className="contenedor">
          <form>
             <div className="campo">
                <label htmlFor="ciudad">Ciudad</label>
