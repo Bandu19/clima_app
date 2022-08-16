@@ -86,9 +86,6 @@ input[type="submit"]:hover {
    width: 100%;
 }
 
-.clima {
-}
-
 .clima > p:first-of-type {
    font-size: 2rem;
    font-family: "Inter", sans-serif;

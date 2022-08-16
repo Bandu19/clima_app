@@ -1,5 +1,6 @@
 import { useState, createContext } from "react";
 import axios from "axios";
+import { useGeoLocation } from "../hooks/useGeoLocation";
 const ClimaContext = createContext();
 
 export const ClimaProvider = ({ children }) => {
@@ -9,6 +10,10 @@ export const ClimaProvider = ({ children }) => {
       ciudad: "",
       pais: "",
    });
+
+   const location = useGeoLocation();
+
+   console.log(location);
 
    // Espera recibir un objeto por respuesta
    const [resultado, setResultado] = useState({});
