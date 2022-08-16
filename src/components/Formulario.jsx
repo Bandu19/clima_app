@@ -24,7 +24,7 @@ export const Formulario = () => {
    };
 
    return (
-      <div className="contenedo">
+      <div className="contenedor">
          {
             // Ocupando Alerta
             alerta && <p>{alerta}</p>
